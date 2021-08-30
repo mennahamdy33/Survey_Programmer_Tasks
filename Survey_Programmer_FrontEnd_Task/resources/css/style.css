@@ -9,13 +9,20 @@ margin-bottom: 20px;
 }
 
 
-.table, .table2 {
+.table, .table2, .table3 {
   display: flex;
   flex-wrap: wrap;
 
   margin: 10px 10px 10px 10px;
   padding: 2rem 0rem 0rem 0rem;
   max-width: 1100px;
+}
+
+.table-cell.package1 .header{
+display: flex;
+  flex-wrap: wrap;
+  border-top: 0.5px solid grey; 
+  border-top-width: 100%;
 }
 
 .table-cell {
@@ -46,6 +53,11 @@ position: relative;
   user-select: none;
 }
 
+
+.table3 .table-cell.choices{
+  display: flex;
+  flex-wrap: wrap;
+}
 .table-cell:first-child {
   outline: 1px solid #fff;
   background: transparent;
@@ -106,6 +118,14 @@ input[type='radio'] {
 .table2 .table-cell {
   width: calc(33.3% - 1px);
 }
+.table3 .table-cell {
+  width: calc(50% - 1px);
+}
+.table-cell.package1 .headers,
+.table-cell.choices .headers {
+  width: calc(33.3% - 1px);
+}
+
 .table-cell .blueAndUnderlined{
  font-weight: bold;
    color: #0066ff;
@@ -117,7 +137,8 @@ input[type='radio'] {
   margin-left: 220px ;
 text-align: center;
 }
-.continue{
+.continue, .back{
+
   background-color: #0066ff; 
   border: none;
   color: white;
@@ -125,12 +146,16 @@ text-align: center;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  
   cursor: pointer;
   border-radius: 4px;
   margin: 20px auto;
   display: block;
 }
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+ margin: 20px auto;}
+ 
 .noPackage:visited {
 background-color: white;
 }
@@ -138,7 +163,7 @@ background-color: white;
 background-color: #E0E0E0 ;
 }
 .noOfChecked, .precOfChecked{
-  
+
     text-align: center;
 }
 
